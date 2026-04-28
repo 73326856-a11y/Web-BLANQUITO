@@ -1,0 +1,361 @@
+/* GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background: white;
+    padding: 20px;
+}
+
+header span {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    justify-content: center;
+    background: crimson;
+}
+
+.nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background: darkred;
+}
+
+/* HERO */
+.hero {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7K1UMvLm4C7ox_JQ8jKuucQUa0RfIdxlFw&s");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero {
+    text-align: center;
+    color: white;
+}
+
+.boton {
+    background: crimson;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SERVICIOS */
+.servicios {
+    text-align: center;
+    padding: 40px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    width: 30%;
+    text-align: center;
+}
+
+.icono {
+    width: 100px;
+    height: 100px;
+    background: rgb(148, 5, 41);
+    color: rgb(243, 243, 248);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 30px;
+}
+/* CONTACTOS */
+.contacto {
+    background: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.boton-enviar {
+    background: crimson;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.boton-enviar:hover {
+    background: darkred;
+}
+/* SOBRE MI */
+.sobre-mi {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+/* TITULOS */
+.sobre-mi h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sobre-mi h2 {
+    color: crimson;
+    margin-top: 20px;
+}
+
+/* PERFIL (ICONO) */
+.perfil-icono {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.perfil-icono i {
+    font-size: 60px;
+    color: navy;
+    background: white;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* DATOS */
+.datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    margin-top: 20px;
+}
+
+.datos p {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+/* PORTAFOLIO */
+.portafolio {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.portafolio h2 {
+    margin-bottom: 20px;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* CLIENTES */
+.clientes {
+    text-align: center;
+    padding: 40px;
+}
+
+.contenedor-clientes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cliente {
+    width: 30%;
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.cliente img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.cliente h3 {
+    margin: 10px 0;
+}
+
+.cliente p {
+    font-size: 14px;
+}
+.testimonio {
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-left: 4px solid crimson;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.testimonio span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+/* CONTACTOs */
+.contactos {
+    text-align: center;
+    padding: 40px;
+    background: #ffffffd5;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.boton-enviar {
+    width: 100%;
+    background: crimson;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background: darkred;
+}
+
+/* INFO EXTRA (TESTIMONIOS) */
+.info-extra {
+    margin-top: 40px;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-left: 4px solid crimson;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+
+
+.whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* CONTACTO-boton whatsapp */
+.whatsapp i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.whatsapp:hover {
+    background: #1ebe5d;
+}

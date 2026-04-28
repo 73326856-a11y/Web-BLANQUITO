@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<section class="contacto">
+
+    <h1>Contacto</h1>
+    <p>Completa el formulario y te responderé lo más pronto posible</p>
+
+    <form class="formulario">
+
+        <div class="campo">
+            <label>Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+        </div>
+
+        <div class="campo">
+            <label>Teléfono</label>
+            <input type="tel" placeholder="Tu teléfono">
+        </div>
+
+        <div class="campo">
+            <label>Correo</label>
+            <input type="email" placeholder="Tu correo">
+        </div>
+
+        <div class="campo">
+            <label>Mensaje</label>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+
+        <input class="boton-enviar" type="submit" value="Enviar">
+
+    </form>
+
+    <!-- BOTÓN WHATSAPP -->
+    <a href="#" class="whatsapp" onclick="enviarWhatsApp()">
+        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+    </a>
+
+    <!-- TESTIMONIO / CONFIANZA -->
+    <div class="info-extra">
+        <h2>¿Por qué contactarme?</h2>
+
+        <div class="beneficios">
+            <div class="beneficio">
+                <p>"Respuesta rápida y atención personalizada."</p>
+            </div>
+
+            <div class="beneficio">
+                <p>"Trabajo profesional y garantizado."</p>
+            </div>
+
+            <div class="beneficio">
+                <p>"Más de 10 clientes satisfechos."</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- SCRIPT WHATSAPP -->
+<script>
+function enviarWhatsApp() {
+    let nombre = document.getElementById("nombre").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    let numero = "943515886"; // 🔴 CAMBIA POR TU NUMERO
+
+    let texto = "Hola, soy " + nombre + ". " + mensaje;
+
+    let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(texto);
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
