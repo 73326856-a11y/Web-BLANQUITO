@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sobre mi</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
      <link rel="stylesheet" href="css/style.css">
@@ -41,6 +42,36 @@
             <div class="proyecto">Proyecto 6</div>
         </div>
     </div>
+
+    <section class="contacto">
+    <h2>FORMULARIO 1</h2>
+    <p>Contáctanos llenando todos los campos</p>
+
+    <form class="formulario" action="guardar_sobremi.php" method="POST">
+        <div class="campo">
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        </div>
+
+        <div class="campo">
+            <label>Teléfono</label>
+            <input type="tel" name="telefono" placeholder="Tu Teléfono" required>
+        </div>
+
+        <div class="campo">
+            <label>Correo</label>
+            <input type="email" name="correo" placeholder="Tu correo" required>
+        </div>
+
+        <div class="campo">
+            <label>Mensaje</label>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        </div>
+
+        <input class="boton-enviar" type="submit" value="Enviar">
+
+    </form>
+</section>
 
 </section>
 </body>

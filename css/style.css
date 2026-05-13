@@ -36,7 +36,7 @@ header span {
 
 /* HERO */
 .hero {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7K1UMvLm4C7ox_JQ8jKuucQUa0RfIdxlFw&s");
+    background-image: url("https://wallpapers.com/images/featured/movil-58g8gv3r23zg29kw.jpg");
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -89,7 +89,7 @@ header span {
 }
 /* CONTACTOS */
 .contacto {
-    background: #f5f5f5;
+    background: #e27676;
     padding: 40px;
     text-align: center;
 }
@@ -389,12 +389,19 @@ textarea {
     transform: scale(0.95);
 }
 
+
+
+
+
+/* Dos style agregados */
+
 /* Resalta el título cuando cambia el nombre */
 .saludo-nuevo {
     color: #c00d27 !important; /* Cambia a rojo cuando se personaliza */
     font-weight: bold;
 }
 
+/* STYLE PRECIONAME */
 
 .boton-explosion {
     position: relative;
@@ -423,3 +430,6 @@ textarea {
     pointer-events: none;
     z-index: 99999; /* Asegura que esté por encima de TODO */
 }
+
+
+

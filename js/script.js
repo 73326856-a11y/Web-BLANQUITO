@@ -89,3 +89,4 @@ function crearParticula(x, y) {
         easing: 'cubic-bezier(0.1, 0.8, 0.3, 1)' // Movimiento de explosión real
     }).onfinish = () => particula.remove();
 }
+
